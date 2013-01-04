@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Esoft_Logger>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Esoft_Logger>
+    </modules>
+</config> 

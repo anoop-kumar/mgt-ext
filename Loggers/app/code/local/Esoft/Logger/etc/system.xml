@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+    Document   : system.xml
+    Created on : 2 January, 2013, 10:59 AM
+    Author     : Anoopk.s
+    Description:
+        Purpose of the document follows.
+-->
+<config>
+    <sections>
+        <logger>
+            <class>separator-top</class>
+            <label>Logger</label>
+            <tab>general</tab>            
+            <frontend_type>select</frontend_type>
+            <sort_order>500</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <view translate="label">
+                    <label>Logger Settings</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                         <choose_store translate="label">
+                            <label>Select Store</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_store</source_model>
+                            <comment>Empty value is the same as default Store.</comment>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </choose_store>
+                        <select_category translate="label">
+                            <label>Select Categories</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>adminhtml/system_config_source_category</source_model>
+                            <comment>Select Category to corresponding Store opted above.</comment>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </select_category>
+                       
+                    </fields>
+                </view>
+            </groups>
+        </logger>    
+    </sections>
+</config>
